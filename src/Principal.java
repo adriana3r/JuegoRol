@@ -34,25 +34,29 @@ public class Principal {
                 
                               
                 int contador = 0;
-                int cnt1 = 3; // cambiar a 100
-                int cnt2 = 3; // cambiar a 100
+                int cnt1 = 3; 
+                int cnt2 = 3;
                 
-                
-        while (cnt1> 0 && cnt2 > 0) {
-                contador = contador+1;
-                JOptionPane.showMessageDialog(null,"ROUND NRO " + contador);
-                
+              
+             
         Random aleatorio = new Random();    
                 int n = aleatorio.nextInt(1)+1;
                 
+        
                 
-                if (n == 1){
+        if (n == 1){
+                        
+                        while (cnt1> 0 && cnt2 > 0) {
+                        contador = contador+1;
+                        JOptionPane.showMessageDialog(null,"ROUND NRO " + contador); 
+            
+            
                         JOptionPane.showMessageDialog(null,"Es el turno de " + j1.getNombre());
                         
                                 int seleccion = JOptionPane.showOptionDialog(null,"Seleccione nivel de poder","Selector de opciones",
                                         JOptionPane.YES_NO_OPTION,
                                         JOptionPane.QUESTION_MESSAGE,null,new Object[] { "Mínimo", "Máximo" },"Mínimo");
-                                        if (seleccion != -1)
+                                        if (seleccion != -1);
 
              
                                 if(j2.getVida()  > 0){
@@ -60,17 +64,22 @@ public class Principal {
                         JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");
                         
                                 if(cnt2 == 0){
-                
                         JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j1.getNombre());
                         
-                }else{
-                            
+                        
+        }else{
+                       
+                        while (cnt1> 0 && cnt2 > 0) {
+                        contador = contador+1;
+                        JOptionPane.showMessageDialog(null,"ROUND NRO " + contador); 
+                        
+                                                
                         JOptionPane.showMessageDialog(null,"Es el turno de " + j2.getNombre());
                         
                                 seleccion = JOptionPane.showOptionDialog(null,"Seleccione nivel de poder","Selector de opciones",
                                         JOptionPane.YES_NO_OPTION,
                                         JOptionPane.QUESTION_MESSAGE,null,new Object[] { "Mínimo", "Máximo" },"Mínimo");
-                                        if (seleccion != -1)
+                                        if (seleccion != -1);
                         
                         
                                 if(j1.getVida()  > 0){
@@ -78,9 +87,9 @@ public class Principal {
                         JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
                         
                                 if(cnt1 == 0){
-                            
                         JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j2.getNombre());
-                
+                        
+                                                                }
                                                         }
                                                 }               
                                         }
@@ -89,6 +98,7 @@ public class Principal {
                 }
         }
 }
+
 
 
 
