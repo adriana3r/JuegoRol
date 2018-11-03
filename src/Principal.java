@@ -34,8 +34,8 @@ public class Principal {
                 
                               
                 int contador = 0;
-                int cnt1 = 3; 
-                int cnt2 = 3;
+                int cnt1 = 3; //cambiar a 100
+                int cnt2 = 3; //cambiar a 100
                 
               
              
