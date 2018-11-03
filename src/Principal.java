@@ -22,19 +22,19 @@ public class Principal {
             
         Jugador j1 = new Jugador();
                 j1.setNombre("TESEO");
-                j1.setVida(3);
+                j1.setVida(3); //cambiar a 100
                 j1.setMinPower(13);
                 j1.setMaxPower(33);
                 
         Jugador j2 = new Jugador();
                 j2.setNombre("MINOTAURO");
-                j2.setVida(3);
+                j2.setVida(3); //cambiar a 100
                 j2.setMinPower(10);
                 j2.setMaxPower(35);        
                 
                               
                 int contador = 0;
-                int cnt1 = 3; //cambiar a 100
+                int cnt1 = 3; //cambiar a 100 
                 int cnt2 = 3; //cambiar a 100
                 
               
