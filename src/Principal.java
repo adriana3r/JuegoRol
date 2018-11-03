@@ -35,7 +35,7 @@ public class Principal {
                               
                 int contador = 0;
                 int cnt1 = 3; // cambiar a 100
-                int cnt2 = 3;
+                int cnt2 = 3; // cambiar a 100
                 
                 
         while (cnt1> 0 && cnt2 > 0) {
