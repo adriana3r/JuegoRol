@@ -34,7 +34,7 @@ public class Principal {
                 
                               
                 int contador = 0;
-                int cnt1 = 100; 
+                int cnt1 = 100;
                 int cnt2 = 100;
                 
                 
@@ -55,13 +55,18 @@ public class Principal {
                         int seleccion = JOptionPane.showOptionDialog(null,"Seleccione nivel de poder",
                                 "Selector de opciones", JOptionPane.YES_NO_OPTION,
                                 JOptionPane.QUESTION_MESSAGE,null,new Object[]
-                                { "Mínimo", "Máximo" },"Mínimo"); if (seleccion != -1);  
-           
-                        if (j2.getVida()  > 0){
-                        cnt2 = cnt2-1;
-                        JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");
-                        }
-                        
+                                { "Mínimo", "Máximo" },"Mínimo"); if (seleccion != -1);
+                                
+                        if (seleccion != 0){            
+                                if(j2.getVida()  > 0);
+                                        cnt2 = cnt2-15;
+                                        JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");
+                        }else{            
+                                cnt2 = cnt2-3;
+                                JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");
+                                }        
+                                
+                                   
                         if(cnt2 == 0){
                         JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j1.getNombre());
                         }                
@@ -75,23 +80,25 @@ public class Principal {
                                 "Selector de opciones",JOptionPane.YES_NO_OPTION,
                                 JOptionPane.QUESTION_MESSAGE,null,new Object[]
                                 { "Mínimo", "Máximo" },"Mínimo");if (seleccion != -1);
-                                
-                        if(j1.getVida()  > 0){
-                        cnt1 = cnt1-1;
-                        JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
-                        }
+                                {
+                                    
+                        if (seleccion != 0){            
+                                if(j1.getVida()  > 0);
+                                        cnt1 = cnt1-30;
+                                        JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
+                        }else{            
+                                cnt1 = cnt1-5;
+                                JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
+                                }
                         
                         if(cnt1 == 0){
-                        JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j2.getNombre()); 
-                        }
-                        
+                        JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j2.getNombre());
+                                        }
+                                }
                         }
                 }
         }                              
-} 
-
-
-                
+}             
 
                                 
 
