@@ -59,10 +59,10 @@ public class Principal {
                                 
                         if (seleccion != 0){            
                                 if(j2.getVida()  > 0);
-                                        cnt2 = cnt2-15;
+                                        cnt2 = cnt2 - j2.getMaxPower();
                                         JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");
                         }else{            
-                                cnt2 = cnt2-3;
+                                cnt2 = cnt2 - j2.getMinPower();
                                 JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");
                                 }        
                                 
@@ -84,10 +84,10 @@ public class Principal {
                                     
                         if (seleccion != 0){            
                                 if(j1.getVida()  > 0);
-                                        cnt1 = cnt1-30;
+                                        cnt1 = cnt1 - j1.getMaxPower();
                                         JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
                         }else{            
-                                cnt1 = cnt1-5;
+                                cnt1 = cnt1 - j1.getMinPower();
                                 JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
                                 }
                         
@@ -98,7 +98,7 @@ public class Principal {
                         }
                 }
         }                              
-}             
+}     
 
                                 
 
