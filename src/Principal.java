@@ -67,7 +67,7 @@ public class Principal {
                                 }        
                                 
                                    
-                        if(cnt2 == 0){
+                        if(cnt2 <= 0){
                         JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j1.getNombre());
                         }                
                                                                             
@@ -91,7 +91,7 @@ public class Principal {
                                 JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
                                 }
                         
-                        if(cnt1 == 0){
+                        if(cnt1 <= 0){
                         JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j2.getNombre());
                                         }
                                 }
