@@ -60,20 +60,26 @@ public class Principal {
                         if (seleccion != 0){            
                                 if(j2.getVida()  > 0);
                                         cnt2 = cnt2 - j2.getMaxPower();
+                                        
+                                if (cnt2 <= -1){
+                                        JOptionPane.showMessageDialog(null,j2.getNombre() + " agotó sus vidas");
+                                }else{
                                         JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");
+                                        }
                         }else{            
                                 cnt2 = cnt2 - j2.getMinPower();
-                                JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");
-                                }        
-                                
-                                   
-                        if(cnt2 <= 0){
+                                if (cnt2 <= -1){
+                                        JOptionPane.showMessageDialog(null,j2.getNombre() + " agotó sus vidas");
+                                }else{
+                                        JOptionPane.showMessageDialog(null,"A " + j2.getNombre() + " le quedan " + cnt2 + " vidas");       
+                                        }
+                                }
+                        
+                        if(cnt2 <= -1){
                         JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j1.getNombre());
-                        }                
-                                                                            
+                        }
         }else{
-                                            
-                                            
+                                           
                         JOptionPane.showMessageDialog(null,"Es el turno de " + j2.getNombre());
                         
                         int seleccion = JOptionPane.showOptionDialog(null,"Seleccione nivel de poder",
@@ -85,19 +91,29 @@ public class Principal {
                         if (seleccion != 0){            
                                 if(j1.getVida()  > 0);
                                         cnt1 = cnt1 - j1.getMaxPower();
+                                        
+                                if (cnt1 <= -1){
+                                        JOptionPane.showMessageDialog(null,j1.getNombre() + " agotó sus vidas");
+                                }else{
                                         JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
+                                        }
                         }else{            
                                 cnt1 = cnt1 - j1.getMinPower();
-                                JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");
+                                if (cnt1 <= -1){
+                                        JOptionPane.showMessageDialog(null,j1.getNombre() + " agotó sus vidas");
+                                }else{
+                                        JOptionPane.showMessageDialog(null,"A " + j1.getNombre() + " le quedan " + cnt1 + " vidas");       
+                                        }
                                 }
                         
+}                  
                         if(cnt1 <= 0){
                         JOptionPane.showMessageDialog(null,"EL GANADOR ES " + j2.getNombre());
-                                        }
+                        
                                 }
                         }
                 }
-        }                              
+        }
 }     
 
                                 
